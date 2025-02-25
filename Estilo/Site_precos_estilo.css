@@ -1,0 +1,87 @@
+/* =============================
+    SEÇÃO - PREÇOS
+============================= */
+.secao-precos {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+
+.secao-precos h2{
+    padding: 100px 0 50px 0;}
+
+/* =============================
+    SEÇÃO - TABELA DE PREÇOS
+============================= */
+.tabela-precos table {
+    margin: auto;
+    /* table-layout: fixed; 
+    width: 100%; 
+    background-color: white;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px rgba(47, 134, 214, 0.5);
+    overflow: hidden;
+    text-align: center; */}
+
+
+.celula-escondida {
+    visibility: hidden}
+
+.celula-cabeçalho {
+    background-color: var(--cinza-claro);
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;}
+
+.tabela-precos thead th {
+    font-size: 14px; /* Texto inicial pequeno */
+    font-weight: 300;
+    color: var(--cinza-escuro);}    
+
+.tabela-precos thead th .preco {
+    font-size: 28px; /* Preço maior */
+    font-weight: bold;
+    color: var(--preto-azulado);
+    }
+
+.primeira-celula {
+    background-color: var(--cinza-claro);
+    font-weight: 600;
+    text-align: left;}
+
+.tabela-precos th,
+.tabela-precos td {
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;}
+
+
+.tabela-precos tbody tr:hover {
+    background-color: #e0e4e8;}
+
+
+
+
+
+
+/* Ajusta os ícones dentro da tabela */
+.tabela-precos img {
+    width: 20px;
+    text-transform: none; /* Remove qualquer transformação de texto aplicada */
+    display: inline-block; /* Garante que as imagens fiquem alinhadas corretamente */
+    vertical-align: middle; /* Centraliza as imagens dentro das células */}
+
+
+@media (max-width: 768px) {
+    .tabela-precos {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}

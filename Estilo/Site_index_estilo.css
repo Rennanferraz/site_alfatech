@@ -1,0 +1,512 @@
+/* =============================
+    2. Layout Principal
+============================= */
+    body {
+        background: var(--cor-fundo);
+        font-family: var(--fonte-padrao);
+        padding-top: 80px; /* Ajuste conforme a altura do header */
+    }
+    
+
+/* =============================
+    2. SEÇÃO 2 - BANNER
+============================= */
+
+/* Define o layout geral da seção do banner */
+.secao2_banner {
+    background-color: var(--azul-destaque); /* Define a cor de fundo da seção */
+    width: 100%; /* Faz com que a seção ocupe toda a largura da tela */
+    padding: 150px 0; /* Adiciona espaçamento superior e inferior para destacar a seção */}
+
+/* Configura o container do banner para manter um layout organizado */
+.secao2_banner .container {
+    max-width: 1024px; /* Define a largura máxima do conteúdo centralizado */
+    margin: 0 auto; /* Centraliza o conteúdo dentro da tela */
+    display: flex; /* Utiliza o modelo flexbox para organizar os elementos */
+    justify-content: space-between; /* Mantém a separação equilibrada entre os elementos */
+    align-items: center; /* Alinha os elementos verticalmente no centro */}
+
+/* Define a largura e a cor do bloco de texto */
+.texto-banner {
+    width: 470px; /* Define uma largura fixa para o texto */
+    color: var(--branco); /* Usa a cor branca para melhor contraste com o fundo */
+    font-family: var(--fonte-padrao); /* Aplica a fonte global definida no :root */}
+
+/* Estiliza o subtítulo dentro do banner */
+.texto-banner .subtitulo {
+    font-size: 14px; /* Define um tamanho menor para o subtítulo */
+    font-weight: normal; /* Mantém o peso da fonte padrão */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior para separação do conteúdo abaixo */}
+
+/* Estiliza o título principal dentro do banner */
+.texto-banner h3 {
+    font-size: 28px; /* Define um tamanho maior para o título */
+    font-weight: bold; /* Aplica um peso maior na fonte para destaque */
+    margin-bottom: 15px; /* Adiciona um espaçamento inferior */}
+
+/* Formata o parágrafo dentro do banner */
+.texto-banner p {
+    font-size: 16px; /* Define um tamanho padrão para a leitura */
+    line-height: 1.5; /* Define um espaçamento entre linhas adequado */}
+
+/* Configura a imagem dentro do banner */
+.imagem-banner {
+    width: 50%; /* Faz com que o bloco de imagem ocupe metade da largura disponível */
+    display: flex; /* Utiliza flexbox para posicionamento */
+    justify-content: center; /* Centraliza a imagem horizontalmente */}
+
+/* Garante que a imagem do banner se ajuste corretamente */
+.imagem-banner img {
+    max-width: 100%; /* Faz com que a imagem nunca ultrapasse seu tamanho original */}
+
+/* Define a largura da parte de texto, já definida acima */
+.texto-banner {
+    width: 470px;}
+
+/* Define a largura da parte da imagem, já definida acima */
+.imagem-banner {
+    width: 50%;}
+
+
+/* =============================
+    3. SEÇÃO - ANÚNCIOS
+============================= */
+
+/* Regras gerais para ambas as seções de anúncio */
+.secao3_anuncio1, .secao6_anuncio2 {
+    width: 100%;
+    /* padding: 40px 0; Mantém o espaçamento superior e inferior */}
+
+/* Cor de fundo específica para o primeiro anúncio */
+.secao3_anuncio1 {
+    background-color: var(--preto-azulado);}
+
+/* Cor de fundo específica para o segundo anúncio */
+.secao6_anuncio2 {
+    background-color: var(--azul-destaque);}
+
+/* Estrutura do container para os dois anúncios */
+.secao3_anuncio1 .container,
+.secao6_anuncio2 .container {
+    /* Mantém o conteúdo centralizado */
+    width: 1024px; 
+    margin: 0 auto;
+    display: flex;
+    /* Mantém o texto à esquerda e o botão à direita */
+    justify-content: space-between; 
+    align-items: center;}
+
+/* Estilos para o texto do anúncio (compartilhado) */
+.texto-anuncio {
+    /* Mantém uma largura padrão para o texto */
+    width: 600px; 
+    /* Texto branco para contrastar com o fundo */
+    color: var(--branco); 
+    font-family: var(--fonte-padrao); 
+    /* Define um tamanho confortável para leitura */
+    font-size: 20px; 
+    font-weight: bold;}
+
+/* Ajuste de espaçamento do texto */
+.texto-anuncio p {
+    font-size: 16px;
+    margin-top: 5px;}
+
+/* Estiliza o destaque dentro do texto */
+.texto-anuncio .destaque {
+    font-size: 20px;
+    font-weight: bold;}
+
+/* Mantém a estrutura das seções de anúncio */
+.secao3_anuncio1 .container,
+.secao6_anuncio2 .container {
+    width: 1024px; /* Mantém o conteúdo centralizado */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Mantém o texto à esquerda e o botão à direita */
+    align-items: center; /* CENTRALIZA TODOS OS ELEMENTOS NA VERTICAL */
+    min-height: 200px; /* Ajusta a altura mínima para manter espaço adequado */
+}
+
+/* Ajusta o botão para ocupar toda a altura do container */
+.secao3_anuncio1 .botao,
+.secao6_anuncio2 .botao {
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo dentro do botão */
+    justify-content: center; /* Garante que o texto do botão fique centralizado */
+    height: 80px;
+    width: 250px;
+}
+
+/* Estilo base para os botões (compartilhado) */
+.botao {
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;}
+
+/* Ajusta o tamanho da imagem dentro do botão */
+.botao img {
+    width: 20px; /* Ajuste conforme necessário */
+    height: auto;}
+
+/* Botão do primeiro anúncio */
+.secao3_anuncio1 .botao {
+    background-color: var(--azul-destaque);
+    color: var(--branco);}
+
+/* Botão do segundo anúncio */
+.secao6_anuncio2 .botao {
+    background-color: var(--preto-azulado); /* Fundo azul */
+    color: var(--branco);}
+    
+/* Efeito ao passar o mouse */
+.secao3_anuncio1 .botao:hover {
+    background-color: var(--cinza-escuro); }
+
+/* Efeito ao passar o mouse */
+.secao6_anuncio2 .botao:hover {
+    background-color: var(--cinza-escuro);}
+
+    
+
+    /* INFORMAÇÕES*/
+    .secao4_informacoes {
+        width: 100%;
+        padding: 150px 0;
+        text-align: center;
+    }
+    
+    .secao4_informacoes .container {
+        width: 1024px;
+        margin: 0 auto;
+    }
+    
+    /* TÍTULO DENTRO DA TABELA */
+    .tabela-informacoes caption {
+        caption-side: top;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .tabela-informacoes caption h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: var(--preto-azulado);
+        font-family: var(--fonte-padrao);
+        margin-bottom: 10px;
+    }
+    
+    .tabela-informacoes caption .destaque {
+        color: var(--azul-destaque);
+    }
+    
+    /* ESTILIZAÇÃO DA TABELA */
+    .tabela-informacoes {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    /* IMAGENS */
+    .tabela-informacoes img {
+        width: 100px; /* Define o tamanho dos ícones */
+        /* margin-bottom: 5px; */
+    }
+    
+    /* SUBTÍTULOS */
+    .tabela-informacoes td strong {
+        font-size: 18px;
+        font-weight: bold;
+        color: var(--preto-azulado);
+        display: block;
+        margin-top: 10px;
+    }
+    
+    /* PARÁGRAFOS */
+    .tabela-informacoes td {
+        font-size: 14px;
+        color: var(--preto-azulado);
+        font-family: var(--fonte-padrao);
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* PLANOS */
+    .secao5_planos {
+        width: 100%; /* Agora o fundo ocupa toda a tela */
+        padding: 150px 0;
+        text-align: center;
+        background-color: var(--cinza-claro); /* Mantém a cor correta do fundo */
+    }
+
+    .secao5_planos .h2_title {
+        width: 1024px; /* Mantém o conteúdo centralizado */
+        margin: 0px auto 70px auto;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .h2_title .destaque {
+        color: var(--azul-destaque);
+    }
+    
+    /* CENTRALIZA O CONTEÚDO DA SEÇÃO */
+    .secao5_planos .container-tabela {
+        width: 1024px; /* Mantém o conteúdo centralizado */
+        margin: 0 auto;
+        box-shadow: 10px 10px 50px 10px rgba(47, 134, 214, 1);
+        border-radius: 15px;
+    }
+    
+    /* ESTILIZAÇÃO DA TABELA */
+    .tabela-planos {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: var(--branco);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    /* CABEÇALHO DA TABELA */
+    .tabela-planos thead {
+        background-color: var(--cinza-medio);
+    }
+    
+    .tabela-planos thead th {
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    /* ESTILIZAÇÃO DAS IMAGENS */
+    .tabela-planos thead img {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+    
+    /* DESCRIÇÕES ABAIXO DAS IMAGENS */
+    .tabela-planos thead p {
+        font-size: 14px;
+        color: var(--preto-azulado);
+        margin-top: 5px;
+    }
+    
+    /* CÉLULAS DA TABELA */
+    .tabela-planos th, .tabela-planos td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+    
+    /* ALTERNÂNCIA DE CORES NAS LINHAS */
+    .tabela-planos tbody tr:nth-child(even) {
+        background-color: var(--cinza-claro);
+    }
+    
+    .tabela-planos tbody tr:hover {
+        background-color: #e0e4e8;
+    }
+
+
+
+ 
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .rodape .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-marca {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .contato p {
+        font-size: 12px;
+    }
+
+    .redes-sociais img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+
+
+/* =============================
+    4. Responsividade
+============================= */
+@media (max-width: 768px) {
+    .secao1_topo {
+        width: 100%;
+        padding: 20px 0; /* Reduz padding para telas menores */
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .secao2_banner .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-banner {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .imagem-banner {
+        width: 100%;
+    }
+
+    .secao3_anuncio1 .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-anuncio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .botao {
+        width: auto;
+    }
+
+    .tabela-informacoes {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela-informacoes th, .tabela-informacoes td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabela-informacoes {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela-informacoes caption h2 {
+        font-size: 24px;
+    }
+
+    .tabela-informacoes td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .secao5_planos {
+        width: 100%;
+        padding: 80px 20px;
+    }
+
+    .tabela-planos {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela-planos caption h2 {
+        font-size: 22px;
+    }
+
+    .tabela-planos thead th {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .tabela-planos thead img {
+        width: 50px;
+    }
+
+    .tabela-planos tbody td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .secao5_planos {
+        padding: 80px 20px;
+    }
+
+    .tabela-planos {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .tabela-planos caption h2 {
+        font-size: 22px;
+    }
+
+    .tabela-planos thead th {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .tabela-planos thead img {
+        width: 50px;
+    }
+
+    .tabela-planos tbody td {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .rodape .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-marca {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .contato p {
+        font-size: 12px;
+    }
+
+    .redes-sociais img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .secao-contato .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .tabela-contato {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}   

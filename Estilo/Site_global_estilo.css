@@ -1,0 +1,206 @@
+/* =============================
+    1. Configurações Globais
+============================= */
+:root {
+    /* Cores principais */
+    --branco: #fff;
+    --cinza-claro: #f1f3f7;
+    --cinza-medio: #f6f6f6;
+    --cinza-escuro: #a89f9f;
+
+    /* Cores de destaque */
+    --preto-azulado: #233032;
+    --azul-destaque: #2f86d6;
+
+    /* Formatação das fontes */
+    --fonte-padrao: 'Poppins', sans-serif;
+    --espacamento-padrao: 16px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* =============================
+    2. HEADER (ESTRUTURA)
+============================= */
+.secao1_topo {
+    position: fixed; /* Mantém o header fixo no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    background-color: var(--branco); /* Mantém a cor de fundo */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    display: flex; /* Organiza os elementos lado a lado */
+    justify-content: space-between; /* Mantém o logo à esquerda e o menu à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 20px 0; /* Ajuste de espaçamento */
+}
+
+.secao1_topo .container {
+    max-width: 1024px; /* Define a largura do conteúdo */
+    width: 100%;
+    margin: 0 auto; /* Centraliza o container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =============================
+    2. HEADER (LOGOMARCA)
+============================= */
+.logo-marca {
+    display: flex;
+    align-items: center;
+}
+
+.logo-marca img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.texto-marca h1 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fonte-padrao); /* Usa a fonte global */
+    color: var(--preto-azulado);
+}
+
+.texto-marca p {
+    font-size: 14px;
+    color: var(--cinza-escuro); /* Cor do texto secundário */
+    font-family: var(--fonte-padrao); /* Usa a fonte global */
+}
+
+/* =============================
+    2. HEADER (MENU DE NAVEGAÇÃO)
+============================= */
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: var(--espacamento-padrao); /* Usa o espaçamento global */
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: var(--fonte-padrao);
+        color: var(--preto-azulado);
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: var(--azul-destaque); /* Azul de destaque ao passar o mouse */
+    }
+
+
+
+/* =============================
+    3. RODAPÉ (Padrão em Todas as Páginas)
+============================= */
+.rodape {
+    background-color: var(--preto-azulado);
+    color: var(--branco);
+    padding: 40px 0;
+    text-align: center;
+    font-family: var(--fonte-padrao);}
+
+.rodape .container {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;}
+
+.rodape-info {
+    margin-top: 20px;
+    font-size: 12px;}
+
+.rodape-info .destaque {
+    font-weight: bold;
+    color: var(--azul-destaque);}
+
+.logo-marca {
+    display: flex;
+    align-items: center;
+    text-align: left;}
+
+.logo-marca img {
+    width: 70px;
+    margin-right: 20px;}
+
+.rodape-marca h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--branco);}
+
+.rodape-marca p {
+    font-size: 14px;
+    color: var(--cinza-medio);}
+
+/* CONTATO */
+.contato h3, .redes-sociais h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;}
+
+.contato img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;}
+
+.contato img:hover {
+    transform: scale(1.1);}
+
+/* REDES SOCIAIS */
+.redes-sociais a {
+    margin: 0 8px;
+    display: inline-block;}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);}
+
+/* TEXTO INFORMATIVO ABAIXO DAS COLUNAS */
+.rodape-info {
+    margin-top: 35px;
+    font-size: 12px;}
+
+.rodape-info .destaque {
+    font-weight: bold;
+    color: var(--azul-destaque);}
+
+/* =============================
+    4. RESPONSIVIDADE (Aplicável a Todas as Páginas)
+============================= */
+@media (max-width: 768px) {
+    .secao1_topo .container, .rodape .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-marca {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .contato p {
+        font-size: 12px;
+    }
+
+    .redes-sociais img {
+        width: 25px;
+        height: 25px;
+    }
+}
